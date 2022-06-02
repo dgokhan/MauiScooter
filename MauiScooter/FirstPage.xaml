@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helper="clr-namespace:MauiScooter.Resources.Helpers"
+             x:Class="MauiScooter.FirstPage"
+             Title="FirstPage"
+             BackgroundColor="#fff">
+    <ScrollView>
+        <Grid RowDefinitions="70,200,350,350">
+
+            <Grid ColumnDefinitions="30,*,30"
+                  Margin="20,10">
+
+                <!--<Label FontFamily="IconFont" FontSize="20"
+                    Text="{x:Static helper:IconFontHelper.ArrowLeft}" TextColor="#000"/>
+
+                <StackLayout Grid.Column="1"
+                             Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             Spacing="5">
+
+                    <Label TextColor="#000" Text="●"
+                           FontSize="15"/>
+
+                    <Label TextColor="#000" Text="◌"
+                           FontSize="15"/>
+
+                    <Label TextColor="#000" Text="◌"
+                           FontSize="15"/>
+                </StackLayout>-->
+
+                <Label Grid.Column="2"
+                    FontFamily="IconFont" FontSize="20"
+                    Text="{x:Static helper:IconFontHelper.Basket}" TextColor="#000"/>
+            </Grid>
+
+            <Label Grid.Row="1" Margin="30,0" 
+                           HorizontalTextAlignment="Start" HorizontalOptions="Start"
+                           Text="Streamlined design racing board with strong pole." TextColor="#000"
+                           FontFamily="RobotoBlack" FontSize="40" FontAttributes="Bold"/>
+
+            <Grid Grid.Row="2"
+                  ColumnDefinitions="110,*">
+
+                <Grid Margin="30,50" HorizontalOptions="Start"
+                    RowDefinitions="80,80,80">
+
+                    <Grid RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.Fire}" TextColor="#161819"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.LightningBolt}" TextColor="#161819"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2" RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.Battery50}" TextColor="#161819"
+                            Rotation="90"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Frame CornerRadius="40"
+                        Margin="0,0,20,0" 
+                        BackgroundColor="#161819"
+                           BorderColor="#161819">
+                        <Label 
+                           HorizontalTextAlignment="Start"
+                           Text="POPULAR" TextColor="#fff"
+                           FontFamily="RobotoBold" FontSize="12"/>
+                    </Frame>
+                    <Frame BorderColor="#161819"
+                        CornerRadius="40"
+                        Margin="0,50,20,0" 
+                        BackgroundColor="#161819">
+
+                        <Image Source="scooter.png"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                    </Frame> 
+                </Grid>
+            </Grid>
+            
+            <Grid Grid.Row="3" Margin="0,20"
+                  ColumnDefinitions="110,*">
+
+                <Grid Margin="30,50" HorizontalOptions="Start"
+                    RowDefinitions="80,80,80">
+
+                    <Grid RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.Fire}" TextColor="#161819"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.LightningBolt}" TextColor="#161819"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2" RowDefinitions="60,30,40">
+                        <Button WidthRequest="60"
+                            HeightRequest="60"
+                            CornerRadius="30"
+                            BackgroundColor="#FFF"
+                            BorderColor="#D4D4D4" BorderWidth="0.4"/>
+
+                        <Label FontFamily="IconFont" FontSize="25" 
+                            VerticalOptions="Center" HorizontalOptions="Center"
+                            Text="{x:Static helper:IconFontHelper.Battery50}" TextColor="#161819"
+                            Rotation="90"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Frame CornerRadius="40"
+                        Margin="0,0,20,0" 
+                        BackgroundColor="#161819"
+                           BorderColor="#161819">
+                        <Label 
+                           HorizontalTextAlignment="Start"
+                           Text="NEW" TextColor="#fff"
+                           FontFamily="RobotoBold" FontSize="12"/>
+                    </Frame>
+                    <Frame BorderColor="#161819"
+                        CornerRadius="40"
+                        Margin="0,50,20,0" 
+                        BackgroundColor="#161819">
+
+                        <Image Source="scooter.png"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>
