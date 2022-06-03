@@ -1,3 +1,3 @@
 # MauiScooter
 
-![s.gif](https://im4.ezgif.com/tmp/ezgif-4-0a336968ea.gif)
+![s.gif](https://github.com/dgokhan/MauiScooter/blob/main/preview.gif?raw=true)
